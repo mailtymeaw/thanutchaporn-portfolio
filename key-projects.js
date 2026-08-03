@@ -34,7 +34,7 @@ const projects = [
   {company:'Stelligence Co., Ltd.',sector:'government',role:'Project Manager',ownership:'Inherited Project',client:'Office of Insurance Commission',name:'31131 Data Warehouse',support:true},
   {company:'Stelligence Co., Ltd.',sector:'private',role:'Project Manager',ownership:'Inherited Project',client:'Stelligence Internal',name:'HR Internal Dashboard',support:true},
   {company:'Stelligence Co., Ltd.',sector:'private',role:'Project Manager',ownership:'Inherited Project',client:'Stelligence Internal',name:'Cloud Internal Dashboard',support:true},
-  {company:'Not specified',sector:'private',role:'Business Analyst',client:'Private Sector',name:'Oil Mobile Ordering'}
+  {company:'Not specified',sector:'private',role:'Business Analyst',client:'Private Sector',name:'Mobile Ordering Oil & Line'}
 ];
 
 const list=document.querySelector('#projectsList');

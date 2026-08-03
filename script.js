@@ -54,7 +54,7 @@ const projectFacts = [
   ['31131 Data Warehouse','Project Manager (Inherited Project)','Value not listed'],
   ['HR Internal Dashboard','Project Manager (Inherited Project)','Value not listed'],
   ['Cloud Internal Dashboard','Project Manager (Inherited Project)','Value not listed'],
-  ['Oil Mobile Ordering','Business Analyst','Value not listed']
+  ['Mobile Ordering Oil & Line','Business Analyst','Value not listed']
 ];
 
 const certificationFacts = [
