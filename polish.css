@@ -351,3 +351,8 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .btn:after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.28) 45%,transparent 70%); transform:translateX(-120%); transition:transform .55s ease; }
 .btn:hover:after { transform:translateX(120%); }
 @media (prefers-reduced-motion:reduce){.project-card:before,.btn:after{display:none}}
+
+/* Learning section: clean white canvas and quieter degree hierarchy. */
+.learning { background:#fff!important; }
+.learning:before { display:none; }
+.education .degree-entry h3 { font-size:clamp(20px,1.8vw,28px); line-height:1.16; letter-spacing:-.03em; }
