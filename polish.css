@@ -1,5 +1,5 @@
 /* Final typography tuning after browser-based visual QA. */
-h1 { font-size: clamp(52px, 5.2vw, 82px); }
+h1 { font-size: clamp(48px, 4.45vw, 70px); }
 
 /* Color-led redesign inspired by the visual language of the supplied CV. */
 :root { --gold: #ffbd2e; --magenta: #f05aa6; --violet: #9b5cff; --sky: #28c7f7; --teal: #22d2bd; --coral: #ff725e; }
@@ -20,6 +20,11 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .hero-summary p:before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 3px; background: var(--magenta); transform: rotate(45deg); box-shadow: 0 0 12px rgba(240,90,166,.4); }
 .hero-summary p:nth-child(2):before { background: var(--sky); box-shadow: 0 0 12px rgba(40,199,247,.4); }
 .hero-summary p:nth-child(3):before { background: var(--gold); box-shadow: 0 0 12px rgba(255,189,46,.4); }
+.hero-summary p:nth-child(4):before { background: var(--teal); box-shadow: 0 0 12px rgba(34,210,189,.4); }
+@media (min-width: 1001px) {
+  .hero h1 em { white-space: nowrap; }
+  .hero-summary p:nth-child(2) { white-space: nowrap; font-size: 13px; }
+}
 .trusted { display: block; max-width: 720px; }
 .trusted > span { display: block; margin-bottom: 10px; color: #7f8ba1; font: 600 10px "Space Grotesk",sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 .hero-tech-list { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -45,13 +50,14 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .stat-achievement span b { display: block; margin-bottom: 4px; color: #fff; font: 600 11px "Space Grotesk",sans-serif; }
 .stat-quality i { color: #ff86bc; background: rgba(240,90,166,.15); }.stat-certified i { color: #80e1fa; background: rgba(40,199,247,.14); }.stat-leadership i { color: #77e7d9; background: rgba(34,210,189,.14); }
 .portrait-card { inset: 135px 17% 116px 19%; border-radius: 32px; border: 5px solid rgba(255,255,255,.92); background: #e98aaf; box-shadow: 18px 18px 0 rgba(40,199,247,.5), -12px -12px 0 rgba(255,189,46,.7), 0 40px 80px rgba(0,0,0,.38); }
+.portrait-card:before { content:""; position:absolute; z-index:6; inset:0; padding:4px; pointer-events:none; border-radius:inherit; background:conic-gradient(from var(--portrait-angle),transparent 0 68%,rgba(40,199,247,.12) 74%,#28c7f7 80%,#f05aa6 87%,#ffbd2e 94%,transparent 100%); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; filter:drop-shadow(0 0 7px rgba(40,199,247,.9)); animation:portraitBorderOrbit 3.8s linear infinite; }
 .portrait-card img { transform: none; object-position: center center; }
 .portrait-card:after { background: linear-gradient(180deg, transparent 72%, rgba(5,20,48,.5)); }
 .hero-education { position: absolute; z-index: 7; left: 18px; right: 18px; bottom: 18px; min-height: 72px; padding: 10px 14px; display: flex; align-items: center; gap: 12px; border: 1px solid rgba(255,255,255,.72); border-left: 5px solid var(--magenta); border-radius: 15px; background: rgba(255,255,255,.9); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 16px 38px rgba(0,0,0,.25); }
 .education-icon { width: 45px; height: 45px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 12px; background: linear-gradient(135deg,#ffe0ee,#f3dcff); color: #d73b84; }
 .education-icon svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .hero-education small { display: block; margin-bottom: 2px; color: #9b4b76; font: 700 7px "Space Grotesk",sans-serif; letter-spacing: .14em; }
-.hero-education strong { display: block; color: #071a3a; font: 600 13px "Space Grotesk",sans-serif; line-height: 1.25; }
+.hero-education strong { display: block; color: #071a3a; font: 600 clamp(10px,.72vw,12px) "Space Grotesk",sans-serif; line-height: 1.25; white-space: nowrap; }
 .hero-education span { display: block; margin-top: 3px; color: #758096; font-size: 9px; }
 .scan-line,.orbit,.spark { display: none; }
 .portrait-tag { background: rgba(5,20,48,.82); border-color: rgba(255,255,255,.24); }
@@ -125,6 +131,10 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .project-iot .project-icon { color: #e2563f; background: #ffe4df; }.project-iot > span { color: #d84d37; }
 .experience { background: #fff; }
 .section-head.label-only { display: block; margin-bottom: 35px; }
+.industry-strip { margin-top:22px; padding:14px 16px; display:flex; align-items:center; gap:18px; border:1px solid rgba(5,20,48,.1); border-radius:15px; background:rgba(255,255,255,.48); }
+.industry-strip>strong { flex:0 0 auto; color:#bd347b; font:700 9px "Space Grotesk",sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+.industry-strip>div { display:flex; align-items:center; flex-wrap:wrap; gap:7px; }
+.industry-strip span { padding:6px 9px; border:1px solid rgba(5,20,48,.09); border-radius:14px; background:rgba(255,255,255,.72); color:#526078; font:500 9px "Space Grotesk",sans-serif; white-space:nowrap; }
 .job { border-radius: 14px; padding-left: 18px; padding-right: 18px; }
 .job:hover { background: #f6f8fc; box-shadow: inset 5px 0 var(--magenta); }
 .job.featured { border-top: 0; box-shadow: inset 5px 0 var(--violet); background: #f8f7ff; }
@@ -194,6 +204,8 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .chat-note { margin: 0; padding: 3px 15px 10px; background: #fff; color: #9a9faa; text-align: center; font-size: 9px; }
 @keyframes messageIn { from { opacity: 0; transform: translateY(8px); } }
 @keyframes typing { to { opacity: .25; transform: translateY(-2px); } }
+@property --portrait-angle { syntax:"<angle>"; initial-value:0deg; inherits:false; }
+@keyframes portraitBorderOrbit { to { --portrait-angle:360deg; } }
 
 @media (min-width: 1600px) {
   .hero { grid-template-columns: 1.12fr .88fr; }
@@ -209,6 +221,7 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
   .status { padding-top: 6px; padding-bottom: 6px; }
   .eyebrow { margin-top: 19px; }
   .hero-summary { margin-top: 20px; margin-bottom: 22px; gap: 7px; }
+  .hero-summary p { font-size: 13px; line-height: 1.45; }
   .hero-actions { margin-top: 25px; margin-bottom: 28px; }
   .client-portfolio-simple { margin-top: 24px; }
 }
@@ -316,12 +329,20 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .project-icon,.education-icon,.achievement-icon {
   box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 12px 28px rgba(42,66,110,.1),0 0 25px rgba(155,92,255,.08);
 }
-.project-examples,.agency-list>div,.tags span,.tools span {
+.project-examples,.agency-list>div,.tags span {
   border:1px solid rgba(255,255,255,.78);
   background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(237,244,252,.5));
   box-shadow:inset 0 1px 0 rgba(255,255,255,.9);
   -webkit-backdrop-filter:blur(12px);
   backdrop-filter:blur(12px);
+}
+.tools span {
+  border:1px solid rgba(117,232,255,.3);
+  background:rgba(4,18,43,.78);
+  color:#dbe8f8;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  box-shadow:none;
 }
 .job { overflow:hidden; transition:transform .28s ease,box-shadow .28s ease,background .28s ease; }
 .job:hover { transform:translateY(-4px); background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(245,242,255,.7))!important; }
@@ -352,7 +373,26 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
 .btn:hover:after { transform:translateX(120%); }
 @media (prefers-reduced-motion:reduce){.project-card:before,.btn:after{display:none}}
 
+@media (max-width:600px) {
+  .industry-strip { align-items:flex-start; flex-direction:column; gap:10px; }
+}
+
 /* Learning section: clean white canvas and quieter degree hierarchy. */
 .learning { background:#fff!important; }
 .learning:before { display:none; }
+.learning .education,
+.learning .certs {
+  background:transparent!important;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  box-shadow:none;
+  border-left:0!important;
+  border-right:0!important;
+  border-bottom:0!important;
+}
 .education .degree-entry h3 { font-size:clamp(20px,1.8vw,28px); line-height:1.16; letter-spacing:-.03em; }
+.project-section-link { align-items:center; }
+.project-section-link a { display:flex; align-items:center; gap:16px; color:#071a3a; text-decoration:none; }
+.project-section-link strong { font-size:16px; }
+.project-section-link small { padding:8px 12px; border:1px solid rgba(5,20,48,.12); border-radius:20px; background:rgba(255,255,255,.7); color:#be397c; font:600 9px "Space Grotesk",sans-serif; transition:.2s; }
+.project-section-link a:hover small { color:#fff; background:#071a3a; transform:translateX(3px); }

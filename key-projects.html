@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Key project portfolio of Thanutchaporn Mekkala across government and private sectors.">
+  <title>Key Projects - Thanutchaporn Mekkala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="key-projects.css">
+  <style>.project-row{min-height:220px}@media(max-width:650px){.project-row{min-height:230px}}</style>
+</head>
+<body>
+  <header class="kp-nav"><a class="kp-brand" href="index.html"><span>TM</span><i></i></a><nav><a href="index.html">Portfolio</a><a href="#projectCatalog">All Projects</a><a href="certifications.html">Certifications</a><a href="index.html#contact">Contact</a></nav></header>
+  <main>
+    <section class="kp-hero">
+      <div class="kp-grid-bg" aria-hidden="true"></div>
+      <div class="kp-hero-copy"><span>DELIVERY RECORD</span><h1>Key projects.<br><em>Measurable outcomes.</em></h1><p>A complete portfolio of technology initiatives delivered across public and private sectors - connecting strategy, requirements, stakeholders, and implementation.</p><div class="kp-stats"><div><strong>36</strong><span>projects recorded</span></div><div><strong>THB 48M</strong><span>maximum managed value</span></div><div><strong>THB 59.9M</strong><span>largest supported project</span></div></div></div>
+      <div class="kp-visual tech-delivery-visual"><img src="assets/technology-delivery-constellation.png" alt="Floating AI technology constellation including mobile, web, Windows applications, cloud, data, analytics, cybersecurity, networks, integration, IoT, vision, and chatbot solutions"></div>
+    </section>
+
+    <section class="project-catalog" id="projectCatalog">
+      <div class="catalog-title"><div><span>PROJECT DATABASE</span><h2>From complex scope<br>to successful delivery.</h2></div><label><span>⌕</span><input type="search" id="projectSearch" placeholder="Search project, client, role or technology"></label></div>
+      <div class="project-filters"><button class="active" data-filter="all">All Projects</button><button data-filter="government">Government</button><button data-filter="private">Private Sector</button></div>
+      <div class="project-count"><strong id="visibleCount">36</strong><span>projects shown</span></div>
+      <div class="projects-list" id="projectsList"></div>
+      <p class="empty-state" hidden>No projects match your current search.</p>
+    </section>
+  </main>
+  <footer><span>Thanutchaporn Mekkala · Key Projects</span><a href="index.html">Back to Portfolio ↗</a></footer>
+  <script src="key-projects.js"></script>
+</body>
+</html>

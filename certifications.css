@@ -20,3 +20,31 @@ body{background:radial-gradient(circle at 10% 12%,rgba(40,199,247,.14),transpare
 .cert-card:before{content:"";position:absolute;z-index:4;top:-60%;left:-42%;width:32%;height:225%;pointer-events:none;opacity:0;transform:rotate(20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent);transition:left .8s ease,opacity .35s ease}.cert-card:hover:before{left:120%;opacity:.72}.cert-card:hover{border-color:rgba(155,92,255,.25);box-shadow:0 30px 72px rgba(38,58,104,.17),0 0 0 1px rgba(155,92,255,.1),inset 0 1px 0 #fff}.card-copy{position:relative;z-index:2}.card-copy button,.skills b{border:1px solid rgba(255,255,255,.8);background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(237,244,252,.58));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.95)}
 .viewer{border:1px solid rgba(255,255,255,.18);background:rgba(5,20,48,.86);backdrop-filter:blur(26px) saturate(140%);-webkit-backdrop-filter:blur(26px) saturate(140%);box-shadow:0 40px 120px rgba(0,0,0,.62),inset 0 1px 0 rgba(255,255,255,.16)}
 @media(prefers-reduced-motion:reduce){.cert-card:before{display:none}}
+
+/* Eight-domain AI neural orbit. */
+.cert-orbit{border-color:rgba(61,211,255,.38);background:radial-gradient(circle at center,rgba(155,92,255,.18),transparent 48%),conic-gradient(from 30deg,rgba(40,199,247,.04),rgba(240,90,166,.13),rgba(155,92,255,.05),rgba(34,210,189,.11),rgba(40,199,247,.04));box-shadow:inset 0 0 75px rgba(40,199,247,.08),0 0 65px rgba(155,92,255,.18)}
+.cert-orbit:before{inset:14%;border-color:rgba(192,126,255,.28);box-shadow:0 0 26px rgba(155,92,255,.1)}
+.cert-orbit:after{inset:30%;background:radial-gradient(circle,rgba(240,90,166,.3),rgba(155,92,255,.18) 45%,rgba(7,24,54,.2) 68%,transparent 72%);box-shadow:0 0 90px rgba(155,92,255,.35)}
+.orbit-circuit{position:absolute;inset:7%;border:1px dashed rgba(117,232,255,.18);border-radius:50%;animation:orbitSpin 28s linear infinite}
+.orbit-circuit:before,.orbit-circuit:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan),0 0 30px rgba(40,199,247,.7)}
+.orbit-circuit:before{top:8%;left:22%}.orbit-circuit:after{right:5%;bottom:30%;background:var(--pink);box-shadow:0 0 15px var(--pink),0 0 30px rgba(240,90,166,.7)}
+.orb{inset:auto;width:68px;height:56px;border-color:rgba(117,232,255,.28);border-radius:17px;background:linear-gradient(145deg,rgba(12,33,70,.92),rgba(5,20,48,.78));font-size:11px;letter-spacing:.04em;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 12px 30px rgba(0,0,0,.32),0 0 20px rgba(40,199,247,.08)}
+.orb-a{top:-1%;left:50%;transform:translateX(-50%);color:#ff91c2}
+.orb-b{top:10%;right:8%;color:#8ee9ff}
+.orb-c{top:50%;right:-1%;transform:translateY(-50%);color:#ffd05f}
+.orb-d{right:8%;bottom:10%;color:#cba1ff}
+.orb-e{bottom:-1%;left:50%;transform:translateX(-50%);color:#5ce6d5}
+.orb-f{bottom:10%;left:8%;color:#7fddff}
+.orb-g{top:50%;left:-1%;transform:translateY(-50%);color:#ff9dca}
+.orb-h{top:10%;left:8%;color:#ffbd6c}
+.ai-core{position:absolute;z-index:3;inset:38%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.3);border-radius:30%;background:linear-gradient(135deg,rgba(240,90,166,.95),rgba(139,75,255,.95) 58%,rgba(40,199,247,.9));box-shadow:0 0 25px rgba(240,90,166,.65),0 0 70px rgba(155,92,255,.5),inset 0 1px 0 rgba(255,255,255,.45);transform:rotate(45deg)}
+.ai-core>span{z-index:2;color:#fff;font-size:18px;font-weight:700;letter-spacing:.08em;transform:rotate(-45deg);text-shadow:0 0 14px rgba(255,255,255,.7)}
+.ai-core>i{position:absolute;inset:-25%;border:1px solid rgba(255,255,255,.18);border-radius:50%;animation:corePulse 3.2s ease-in-out infinite}
+.ai-core>b{position:absolute;width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}.ai-core>b:nth-of-type(1){top:10%;left:12%}.ai-core>b:nth-of-type(2){top:12%;right:10%;background:#9cf2ff}.ai-core>b:nth-of-type(3){right:12%;bottom:10%;background:#ffd46e}.ai-core>b:nth-of-type(4){left:10%;bottom:12%;background:#ff9bc8}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}@keyframes corePulse{50%{transform:scale(1.12);opacity:.45}}
+@media(prefers-reduced-motion:reduce){.orbit-circuit,.ai-core>i{animation:none}}
+/* Typography scale aligned with the main portfolio page. */
+.cert-hero h1{font-size:clamp(48px,4.45vw,70px);line-height:1.02;letter-spacing:-.055em}
+.cert-hero-copy>p{font-size:14px;line-height:1.65}
+.catalog h2{font-size:clamp(30px,3.2vw,46px);line-height:1.08;letter-spacing:-.045em}
+@media(max-width:650px){.cert-hero h1{font-size:38px}}
