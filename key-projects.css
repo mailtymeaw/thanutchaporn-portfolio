@@ -16,3 +16,4 @@
 .kp-visual.tech-delivery-visual:before,.kp-visual.tech-delivery-visual:after{display:none}
 .tech-delivery-visual img{object-fit:contain;mix-blend-mode:screen;opacity:.92;filter:saturate(.88) contrast(1.08) drop-shadow(0 24px 48px rgba(40,199,247,.12));-webkit-mask-image:radial-gradient(ellipse 68% 76% at center,#000 48%,rgba(0,0,0,.9) 66%,transparent 96%);mask-image:radial-gradient(ellipse 68% 76% at center,#000 48%,rgba(0,0,0,.9) 66%,transparent 96%)}
 .kp-hero{min-height:680px;padding-top:125px;padding-bottom:38px}
+.visitor-counter{display:inline-flex;align-items:center;gap:7px;color:#9eacc1}.visitor-counter i{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 12px var(--teal)}.visitor-counter b{color:#fff;font-size:12px}

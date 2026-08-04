@@ -48,3 +48,4 @@ body{background:radial-gradient(circle at 10% 12%,rgba(40,199,247,.14),transpare
 .cert-hero-copy>p{font-size:14px;line-height:1.65}
 .catalog h2{font-size:clamp(30px,3.2vw,46px);line-height:1.08;letter-spacing:-.045em}
 @media(max-width:650px){.cert-hero h1{font-size:38px}}
+.visitor-counter{display:inline-flex;align-items:center;gap:7px;color:#9eacc1}.visitor-counter i{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 12px var(--teal)}.visitor-counter b{color:#fff;font-size:12px}

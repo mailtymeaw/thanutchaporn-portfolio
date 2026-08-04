@@ -390,6 +390,9 @@ h1 em { -webkit-text-stroke: 0; color: transparent; background: linear-gradient(
   border-right:0!important;
   border-bottom:0!important;
 }
+.visitor-counter { display:inline-flex; align-items:center; gap:7px; color:#aebbd0; }
+.visitor-counter i { width:7px; height:7px; border-radius:50%; background:var(--teal); box-shadow:0 0 12px var(--teal); animation:pulse 1.8s infinite; }
+.visitor-counter b { color:#fff; font:700 12px "Space Grotesk",sans-serif; letter-spacing:0; }
 .education .degree-entry h3 { font-size:clamp(20px,1.8vw,28px); line-height:1.16; letter-spacing:-.03em; }
 .project-section-link { align-items:center; }
 .project-section-link a { display:flex; align-items:center; gap:16px; color:#071a3a; text-decoration:none; }
